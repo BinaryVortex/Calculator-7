@@ -33,10 +33,10 @@ body::before {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 200px; /* Further reduced from 250px to 200px */
-    padding: 10px; /* Further reduced from 15px to 10px */
+    max-width: 250px; /* Reduced from 300px to 250px */
+    padding: 15px; /* Reduced from 20px to 15px */
     background: rgba(255, 255, 255, 0.85);
-    border-radius: 10px; /* Slightly reduced for a more compact look */
+    border-radius: 12px; /* Slightly reduced for a more compact look */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -47,12 +47,12 @@ body::before {
 .display {
     background: linear-gradient(145deg, #ffa94d, #ff6347);
     color: #fff;
-    font-size: 1.4rem; /* Further reduced from 1.8rem */
+    font-size: 1.8rem; /* Reduced from 2rem */
     text-align: right;
-    padding: 8px; /* Further reduced from 12px */
-    margin-bottom: 8px; /* Further reduced from 12px */
-    border-radius: 8px; /* Slightly reduced to match container */
-    height: 40px; /* Reduced from 50px */
+    padding: 12px; /* Reduced from 15px */
+    margin-bottom: 12px; /* Reduced from 15px */
+    border-radius: 10px; /* Slightly reduced to match container */
+    height: 50px; /* Reduced from 60px */
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: font-size 0.3s ease-in-out;
 }
@@ -61,16 +61,16 @@ body::before {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8px; /* Reduced from 10px */
+    grid-gap: 10px;
 }
 
 /* Button Styles */
 button {
     background: linear-gradient(145deg, #ff7f50, #ff6347);
     border: none;
-    border-radius: 6px; /* Further reduced to match the smaller container */
-    padding: 8px; /* Further reduced from 12px */
-    font-size: 1rem; /* Further reduced from 1.2rem */
+    border-radius: 8px; /* Slightly reduced to match the smaller container */
+    padding: 12px; /* Reduced from 15px */
+    font-size: 1.2rem; /* Reduced from 1.4rem */
     color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -104,40 +104,40 @@ button:active {
 /* Responsive Design for Tablets */
 @media (max-width: 768px) {
     .container {
-        max-width: 60%;
-        padding: 8px; /* Adjusted padding */
+        max-width: 70%;
+        padding: 12px; /* Adjusted padding */
     }
 
     .display {
-        font-size: 1.2rem; /* Adjusted font size */
-        padding: 6px; /* Adjusted padding */
+        font-size: 1.6rem;
+        padding: 10px; /* Adjusted padding */
     }
 
     button {
-        padding: 6px;
-        font-size: 0.9rem; /* Adjusted font size */
+        padding: 10px;
+        font-size: 1.1rem; /* Adjusted font size */
     }
 }
 
 /* Responsive Design for Mobile Phones */
 @media (max-width: 480px) {
     .container {
-        max-width: 70%;
-        padding: 6px; /* Further reduced padding */
+        max-width: 80%;
+        padding: 10px;
     }
 
     .display {
-        font-size: 1rem; /* Adjusted font size */
-        padding: 5px; /* Further reduced padding */
+        font-size: 1.4rem;
+        padding: 8px;
     }
 
     button {
-        padding: 5px;
-        font-size: 0.8rem; /* Further reduced font size */
+        padding: 8px;
+        font-size: 1rem;
     }
 
     /* Adjust grid gap for smaller screens */
     .buttons {
-        grid-gap: 4px; /* Further reduced grid gap */
+        grid-gap: 6px; /* Reduced grid gap for smaller buttons */
     }
 }

@@ -33,11 +33,11 @@ body::before {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 250px; /* Reduced from 300px to 250px */
-    padding: 15px; /* Reduced from 20px to 15px */
+    max-width: 150px; /* Further reduced from 200px to 150px */
+    padding: 8px; /* Further reduced from 10px to 8px */
     background: rgba(255, 255, 255, 0.85);
-    border-radius: 12px; /* Slightly reduced for a more compact look */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Reduced border-radius */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: max-width 0.3s ease-in-out;
@@ -47,13 +47,13 @@ body::before {
 .display {
     background: linear-gradient(145deg, #ffa94d, #ff6347);
     color: #fff;
-    font-size: 1.8rem; /* Reduced from 2rem */
+    font-size: 1.2rem; /* Further reduced from 1.4rem to 1.2rem */
     text-align: right;
-    padding: 12px; /* Reduced from 15px */
-    margin-bottom: 12px; /* Reduced from 15px */
-    border-radius: 10px; /* Slightly reduced to match container */
-    height: 50px; /* Reduced from 60px */
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 6px; /* Further reduced from 8px to 6px */
+    margin-bottom: 6px; /* Further reduced from 8px to 6px */
+    border-radius: 6px; /* Reduced border-radius */
+    height: 35px; /* Further reduced from 40px to 35px */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: font-size 0.3s ease-in-out;
 }
 
@@ -61,18 +61,18 @@ body::before {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 6px; /* Reduced from 8px to 6px */
 }
 
 /* Button Styles */
 button {
     background: linear-gradient(145deg, #ff7f50, #ff6347);
     border: none;
-    border-radius: 8px; /* Slightly reduced to match the smaller container */
-    padding: 12px; /* Reduced from 15px */
-    font-size: 1.2rem; /* Reduced from 1.4rem */
+    border-radius: 5px; /* Further reduced to match the smaller container */
+    padding: 6px; /* Further reduced from 8px to 6px */
+    font-size: 0.9rem; /* Further reduced from 1rem to 0.9rem */
     color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.1s ease-in-out, background 0.3s, font-size 0.3s ease-in-out;
 }
@@ -85,7 +85,7 @@ button:hover {
 /* Button Active Effect */
 button:active {
     transform: scale(0.95);
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Gradient Overlay Animation */
@@ -104,40 +104,40 @@ button:active {
 /* Responsive Design for Tablets */
 @media (max-width: 768px) {
     .container {
-        max-width: 70%;
-        padding: 12px; /* Adjusted padding */
+        max-width: 50%;
+        padding: 6px; /* Adjusted padding */
     }
 
     .display {
-        font-size: 1.6rem;
-        padding: 10px; /* Adjusted padding */
+        font-size: 1rem; /* Adjusted font size */
+        padding: 4px; /* Adjusted padding */
     }
 
     button {
-        padding: 10px;
-        font-size: 1.1rem; /* Adjusted font size */
+        padding: 4px;
+        font-size: 0.8rem; /* Adjusted font size */
     }
 }
 
 /* Responsive Design for Mobile Phones */
 @media (max-width: 480px) {
     .container {
-        max-width: 80%;
-        padding: 10px;
+        max-width: 60%;
+        padding: 4px; /* Further reduced padding */
     }
 
     .display {
-        font-size: 1.4rem;
-        padding: 8px;
+        font-size: 0.9rem; /* Adjusted font size */
+        padding: 3px; /* Further reduced padding */
     }
 
     button {
-        padding: 8px;
-        font-size: 1rem;
+        padding: 3px;
+        font-size: 0.7rem; /* Further reduced font size */
     }
 
     /* Adjust grid gap for smaller screens */
     .buttons {
-        grid-gap: 6px; /* Reduced grid gap for smaller buttons */
+        grid-gap: 4px; /* Further reduced grid gap */
     }
 }
